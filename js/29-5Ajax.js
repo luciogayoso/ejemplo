@@ -48,23 +48,23 @@ if (valores[3].length > valores[4].length) {
 
 
 
-// function solicitudAJAX() {
+function solicitudAJAX() {
 
-//     var id = document.querySelector("#entrada").value;
-//     var url = "https://pokeapi.co/api/v2/pokemon/"+id;
+    var id = document.querySelector("#entrada").value;
+    var url = "https://pokeapi.co/api/v2/pokemon/"+id;
 
-//     var objXMLHttpRequest = new XMLHttpRequest();
+    var objXMLHttpRequest = new XMLHttpRequest();
 
-//     objXMLHttpRequest.onreadystatechange = function() {
-//     if(objXMLHttpRequest.readyState === 4) {
-//         if(objXMLHttpRequest.status === 200) {
-//           console.log(objXMLHttpRequest.responseText);
-//         }else {
-//           alert('Error Code: ' +  objXMLHttpRequest.status);
-//           alert('Error Message: ' + objXMLHttpRequest.statusText);
-//         }
-//     }
-// }
-// objXMLHttpRequest.open('GET', url);
-// objXMLHttpRequest.send();
-// }
+    objXMLHttpRequest.onreadystatechange = function() {
+    if(objXMLHttpRequest.readyState === 4) {
+        if(objXMLHttpRequest.status === 200) {
+          console.log(objXMLHttpRequest.responseText);
+        }else {
+          alert('Error Code: ' +  objXMLHttpRequest.status);
+          alert('Error Message: ' + objXMLHttpRequest.statusText);
+        }
+    }
+}
+objXMLHttpRequest.open('GET', url);
+objXMLHttpRequest.send();
+}
