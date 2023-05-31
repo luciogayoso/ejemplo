@@ -9,22 +9,17 @@ function Ejerccio1() {
 
 
 
-function Ejerccio2() {
+function Ejercicio2() {
     var valores = [true, 5, false, "hola", "adios",2,"gjdjdflk"];
-    var posicion = 0;
     var valor = "";
 
     for (let i = 0; i < valores.length; i++) {
         if (typeof(valores[i]) == "string") {
-            if (aux[i].length > aux[i+1].length && i+1 < aux.length) {
-            posicion = i;
-            valor = aux[i];
-            }else {
-            posicion = i +1;
-            valor = aux[i + 1];
-            }
+            if (valores[i].length > valor.length) {
+            valor = valores[i];
         }
     }
+}
 
     console.log("el mayor es "+valor);
 
@@ -34,9 +29,8 @@ if (valores[3].length > valores[4].length) {
 }else{
     console.log("adios en mayor")
 }
-
-
 }
+
 
 
 
@@ -71,3 +65,4 @@ function solicitudAJAX() {
 objXMLHttpRequest.open('GET', url);
 objXMLHttpRequest.send();
 }
+
