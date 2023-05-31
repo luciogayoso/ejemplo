@@ -1,5 +1,15 @@
+function Ejerccio1() {
+    var meses = ["Enero","Febrero","Marzo","Abrir","Mayo","junio","julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
 
-function Array2() {
+    for (let i = 0; i < meses.length; i++) {
+        console.log(meses[i]);
+    }
+}
+
+
+
+
+function Ejerccio2() {
     var valores = [true, 5, false, "hola", "adios",2,"gjdjdflk"];
     var posicion = 0;
     var valor = "";
@@ -18,6 +28,7 @@ function Array2() {
 
     console.log("el mayor es "+valor);
 
+    //comparacion directa
 if (valores[3].length > valores[4].length) {
     console.log("hola en mayor");
 }else{
