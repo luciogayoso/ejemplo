@@ -189,7 +189,22 @@ function ProfesorInstancias() {
 }
 
 
+function Ejercicio10() {
+    let valores = [0,0,0,0,0,0,0,0,0,0,0,0,0];
 
+    for (let i = 1; i < 36000; i++) {
+        let dado1 = Math.round(Math.random() * (6-1)+1);
+        let dado2 = Math.round(Math.random() * (6-1)+1);
+
+        let numeroObtenido = dado1 + dado2;
+
+        valores[numeroObtenido]++;
+    }
+
+    for (let i = 2; i < valores.length; i++) {
+        console.log("El numero "+ i + " aparecio "+ valores[i] + " veces.");
+    }
+}
 
 
 function solicitudAJAX() {
